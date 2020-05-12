@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
   font-size: 10px;
@@ -11,9 +15,17 @@ body {
 ::-moz-selection { background: #ddbdd5; }
 ::selection { background: #ddbdd5; }
 
+a {
+  text-decoration: none;
+}
+
 ul {
-  padding: 0;
+  padding-left: 2rem;
   margin: 0;
+}
+
+li {
+  margin-bottom: .5rem;
 }
 
 /* FONTS */
@@ -37,7 +49,7 @@ section h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .highlighted-text {
@@ -45,6 +57,10 @@ h3 {
   color: black;
   padding: 0 1rem 0 .5rem;
   font-weight: bolder;
+}
+
+.t-lighter {
+  font-weight: lighter;
 }
 
 /* Layout */
@@ -57,6 +73,13 @@ section {
   padding: 7rem 2rem;
 }
 
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 10rem 2rem;
+  }
+}
+
+/* IMAGES */
 .img-responsive {
   width: 100%;
 }
@@ -74,10 +97,22 @@ section {
   left: 10px;
 }
 
-@media only screen and (min-width: 768px) {
-  section {
-    padding: 10rem 2rem;
-  }
+.img-box {
+  position: relative;
+}
+
+.img-box__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s all ease-in-out;
+}
+
+.img-box .img-box__overlay:hover {
+  background: rgba(0,0,0,0);
 }
 
 /* HEADER */
@@ -147,6 +182,15 @@ section {
 
 .about__text {
   padding: 4rem 1rem;
+}
+
+.about__links {
+  margin-top: 2rem;
+}
+
+.about__links a {
+  color: #78697c;
+  margin-right: 2rem;
 }
 
 .about__skills {
@@ -256,3 +300,135 @@ section {
   }
 }
 
+/* SKILLS */
+.skill__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill__columns h3 {
+  margin-bottom: 1rem;
+}
+
+.skill__columns > div {
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+  
+@media only screen and (min-width: 500px) {
+  .skill__columns > div {
+    margin: 0 1rem 3rem auto;
+  }
+}
+
+/* EDUCATION & COURSES */
+.learning > div {
+  margin-bottom: 3rem;
+}
+
+.education__meta p {
+  font-weight: lighter;
+}
+
+.education__meta:last-child {
+  margin-top: 2.5rem;
+}
+
+.courses ul li {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .learning {
+    display: flex;
+  }
+  
+  .learning > div {
+    padding: 0 2rem;
+  }
+  
+  .education {
+    text-align: right;
+  }
+
+}
+
+/* PROJECTS */
+.projects {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding-bottom: 25rem;
+}
+
+.projects__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__card {
+  position: relative;
+  width: 45%;
+}
+
+.projects__card img,
+.projects__card .img-box__overlay {
+  max-width: 40rem;
+}
+
+.projects__card-desc {
+  max-width: 50rem;
+  background: #f7f7f7;
+  padding: 2rem;
+  position: absolute;
+  bottom: -5rem;
+  border: 1px dashed black;
+  border-radius: 3px;
+  transition: .5s all ease-in-out;
+}
+
+.img-box:hover + .projects__card-desc {
+  bottom: -15rem;
+}
+
+.projects__card-desc_left {
+  left: 13rem;
+}
+
+.projects__card-desc h3 {
+  position: absolute;
+  top: -4rem;
+  color: white;
+}
+
+.projects__card-tech {
+  position: absolute;
+  bottom: -3.5rem;
+  font-size: 2rem;
+}
+
+.projects__card_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects__card_right .projects__card-desc {
+  right: 10rem;
+}
+
+.projects__card_right h3 {
+  right: 0;
+}
+
+.projects__card_right .projects__card-tech {
+  right: 0;
+}
+
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background: #8e7c93;
+  text-align: center;
+padding: 2rem 0;
+color: white;
+}

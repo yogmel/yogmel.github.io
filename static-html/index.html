@@ -1,11 +1,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Mellina Yonashiro - Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,500,600,600i,700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <script src="https://kit.fontawesome.com/696c0fcff5.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
@@ -29,6 +30,23 @@
           </div>
           <div class="about__text">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio repellendus repudiandae aperiam sapiente vero, eum nam impedit ab amet fugit dolorum asperiores quod voluptatem, exercitationem provident officiis aspernatur blanditiis?</p>
+            <div class="about__links">
+              <a href="https://dev.to/yogmel" target="_blank">
+                <i class="far fa-envelope fa-3x"></i>
+              </a>
+              <a href="https://dev.to/yogmel" target="_blank">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+              <a href="https://dev.to/yogmel" target="_blank">
+                <i class="fab fa-linkedin fa-3x"></i>
+              </a>
+              <a href="https://dev.to/yogmel" target="_blank">
+                <i class="fab fa-dev fa-3x"></i>
+              </a>
+              <a href="https://medium.com/@yogmel" target="_blank">
+                <i class="fab fa-medium fa-3x"></i>
+              </a>
+            </div>
             <div class="about__skills">
               <h3>Stack Highlights</h3>
               <ul class="about__skill-list">
@@ -76,71 +94,135 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Skills</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quo quaerat, quas repudiandae doloribus autem laborum, suscipit repellendus praesentium eaque corporis temporibus illum quis asperiores ea, modi rem? Aspernatur.</p>
+    <section class="skills container">
+        <h2>03. <span class="highlighted-text">Skills</span></h2>
+
+        <div class="skill__columns">
+          <div>
+            <h3>Front-end</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Sass/SCSS)</li>
+              <li>Bootstrap</li>
+              <li>Javascript (ES6+)</li>
+              <li>ReactJs</li>
+              <ul>
+                <li>Jest</li>
+                <li>Redux</li>
+              </ul>
+            </ul>
+          </div>
+          <div>
+            <h3>Back-end / Database</h3>
+            <ul>
+              <li>Node.js</li>
+              <ul>
+                <li>Express</li>
+              </ul>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul>
+              <li>Git / Mercurial</li>
+              <li>Github</li>
+              <li>VS Code / Sublime</li>
+              <li>SCRUM (Jira)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Others</h3>
+            <ul>
+              <li>React Native</li>
+              <li>Wordpress</li>
+              <li>Firebase</li>
+              <li>Gatsby</li>
+              <li>User Experience (UX)</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <section class="learning container">
+      <div class="education">
+        <h2>04.1 <span class="highlighted-text">Education</span></h2>
+        <div class="education__meta">
+          <h3>Universidade Estadual Paulista (UNESP)</h3>
+          <p>Design Bachelor</p>
+          <p>Bauru, SP - Brazil | 2011 - 2015</p>
+        </div>
+        <div class="education__meta">
+          <h3>Parsons The New School for Design</h3>
+          <p>Design and Technology Major Visiting Student</p>
+          <p>New York, NY | Jan - Dec 2013</p>
+        </div>
+
+      </div>
+
+      <div class="courses">
+        <h2>04.2 <span class="highlighted-text">Courses</span></h2>
+        <ul>
+          <li>Advanced Javascript - <span class="t-lighter">Udemy</span></li>
+          <li>Node.js developer course - <span class="t-lighter">Udemy</span></li>
+          <li>React Native The Practical Guide - <span class="t-lighter">Udemy</span></li>
+          <li>Advanced CSS and Sass - <span class="t-lighter">Udemy</span></li>
+          <li>React Developer Course - <span class="t-lighter">Udemy</span></li>
+          <li>Sprint Programaria - <span class="t-lighter">Artificial Intelligence</span></li>
+          <li>Curso Pocket Itaú - <span class="t-lighter">Machine Learning</span></li>
+          <li>Introduction to IoT - <span class="t-lighter">Cisco Networking Academy</span></li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Education</h2>
-        <div>
-          <div>
-            <img src="" alt="">
-            <div>
-              <p>University | Bachelor</p>
-              <p>Date</p>
-            </div>
+    <section class="projects">
+      <h2>05. <span class="highlighted-text">Projects</span></h2>
+      <div class="projects__box">
+        <div class="projects__card">
+          <div class="img-box">
+            <img src="./img/indecision-app.png" alt="">
+            <div class="img-box__overlay"></div>
           </div>
-        </div>
-      </div>
-
-      <div>
-        <h2>Courses</h2>
-        <div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at ut unde consequuntur libero dolores accusantium, asperiores hic illum a aperiam amet, vero esse iusto, molestias quibusdam corporis sapiente magnam!
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at ut unde consequuntur libero dolores accusantium, asperiores hic illum a aperiam amet, vero esse iusto, molestias quibusdam corporis sapiente magnam!
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Project work</h2>
-      <div>
-        <div>
-          <img src="" alt="">
-          <div>
-            <p>Project 1</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ducimus aliquid accusamus impedit. Deserunt autem exercitationem atque officia sunt, repellendus, recusandae omnis tenetur fugit excepturi culpa ratione amet assumenda nam.</p>
-            <div>Tech 1 | Tech 2 | Tech 3</div>
+          <div class="projects__card-desc projects__card-desc_left">
+            <h3>Indecision App</h3>
+            <p>Not sure what to do next? Add your options into Indecision App and let the computer choose it for you! Built on a bare React project, setup with Webpack and Sass loader.</p>
+            <div class="projects__card-tech">ReactJs  |  Sass  |  Webpack</div>
           </div>
         </div>
 
-        <div>
-          <img src="" alt="">
-          <div>
-            <p>Project 1</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ducimus aliquid accusamus impedit. Deserunt autem exercitationem atque officia sunt, repellendus, recusandae omnis tenetur fugit excepturi culpa ratione amet assumenda nam.</p>
-            <div>Tech 1 | Tech 2 | Tech 3</div>
+        <div class="projects__card projects__card_right">
+          <div class="img-box">
+            <img src="./img/rn-boilerplate.png" alt="">
+            <div class="img-box__overlay"></div>
+          </div>
+          <div class="projects__card-desc">
+            <h3>React Native Boilerplate</h3>
+            <p>It is a template to a React Native app,
+              which consists of a Login, Signup, Home and Input Data screens. Integration with Firebase is
+              also available and ready-to-use.</p>
+            <div class="projects__card-tech">React Native  |  Firebase  |  Android Studio</div>
           </div>
         </div>
+
       </div>
     </section>
 
 
-    <section>
+    <!-- <section>
       <div>
         <form action="#">
           <input type="text">
         </form>
       </div>
-    </section>
+    </section> -->
   </main>
+
+  <footer class="footer">
+    <p>Made with love by Mellina Yonashiro 2020 @ <a href="https://github.com/yogmel/yogmel.github.io" target="_blank">
+      Github
+    </a></p>
+  </footer>
+
+
 </body>
 </html>

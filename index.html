@@ -1,13 +1,17 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Mellina Yonashiro - Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,500,600,600i,700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,500,600,600i,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/696c0fcff5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header class="header">
     <div class="header__box">
@@ -29,7 +33,9 @@
             <div class="img-box__border"></div>
           </div>
           <div class="about__text">
-            <p>Nice to meet you! I'm a software engineer, designer and educator, passionate about social, cultural and collaborative experiences. I'm currently looking for a remote opportunity as a software engineer position.</p>
+            <p>Nice to meet you! I'm a software engineer, designer and educator, passionate about social, cultural and
+              collaborative experiences. I'm currently looking for a remote opportunity as a software engineer position.
+            </p>
             <div class="about__links">
               <a href="mailto:yonashiro.mellina@gmail.com" target="_blank">
                 <i class="far fa-envelope fa-3x"></i>
@@ -70,10 +76,15 @@
         <h2>02. <span class="highlighted-text">Work Experience</span></h2>
 
         <div class="experience__timeline">
-          
+          <button data-controls="experienceOne">YouSea</button>
+          <div class="experience__divider"></div>
+          <button data-controls="experienceTwo">Reprograma</button>
+          <div class="experience__divider"></div>
+          <button data-controls="experienceThree" class="active">Mozilla</button>
+          <div class="experience__timeline-pointer" id="experiencePointer"></div>
         </div>
 
-        <div class="experience__desc">
+        <div class="experience__desc active" id="experienceThree">
           <img src="./img/mozilla-logo.png" alt="">
           <div class="experience__text">
             <div class="experience__meta">
@@ -81,11 +92,67 @@
               <p>Remote | Dec 2019 – Mar 2020</p>
             </div>
             <div class="experience__details">
-              <p>Some of Mozilla's employers, who have some kind of disability, were struggling to use Treeherder continuous integration apps. My role in this scenario was to <span class="highlighted-text">improve accessibility</span> - make sure bugs were fixed and user experience was enhanced.</p>
+              <p>Some of Mozilla's employers, who have some kind of disability, were struggling to use Treeherder
+                continuous integration apps. My role in this scenario was to <span class="highlighted-text">improve
+                  accessibility</span> - make sure bugs were fixed and user experience was enhanced.</p>
               <ul>
-                <li>Stay in contact with the users, attend meetings to <span class="highlighted-text">discuss implementation strategies</span>.</li>
-                <li>Develop <span class="highlighted-text">new components in React</span> and others were improved and optimized.</li>
-                <li>Update its <span class="highlighted-text">documentation</span>, so all new code followed the best accessibility practices.</li>
+                <li>Stay in contact with the users, attend meetings to <span class="highlighted-text">discuss
+                    implementation strategies</span>.</li>
+                <li>Develop <span class="highlighted-text">new components in React</span> and others were improved and
+                  optimized.</li>
+                <li>Update its <span class="highlighted-text">documentation</span>, so all new code followed the best
+                  accessibility practices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="experience__desc" id="experienceTwo">
+          <img src="./img/reprograma-logo.png" alt="">
+          <div class="experience__text">
+            <div class="experience__meta">
+              <h3>Reprograma | Front-end Development Teacher</h3>
+              <p>São Paulo - Brazil | Feb 2018 – present</p>
+            </div>
+            <div class="experience__details">
+              <p>Reprograma is an NGO whose mission is to inspire, empower women, and teach them the latest
+                skills needed to become excellent frontend developers. This comes with some challenges, such
+                as managing a large group of diverse women (of different races, sexualities, social
+                backgrounds) and staying updated on the latest technologies in the IT industry. My role is to
+                teach basic and advanced React and Javascript classes. I also supervise some projects during
+                the program.</p>
+              <ul>
+                <li>SKeep me updated on the latest technologies and structure classes so students have the
+                  best learning experience.</li>
+                <li>Manage and supervise projects developed by students.</li>
+                <li>Provide support to students in and out of classes.</li>
+                <li>Attend administrative meetings with tech leaders and teachers to discuss class content.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="experience__desc" id="experienceOne">
+          <img src="./img/yousea-logo.png" alt="">
+          <div class="experience__text">
+            <div class="experience__meta">
+              <h3>YouSea | Web and Software Developer</h3>
+              <p>Remote | Dec 2019 – Mar 2020</p>
+            </div>
+            <div class="experience__details">
+              <p>Some of Mozilla's employers, who have some kind of disability, were struggling to use Treeherder
+                continuous integration apps. My role in this scenario was to <span class="highlighted-text">improve
+                  accessibility</span> - make sure bugs were fixed and user experience was enhanced.</p>
+              <ul>
+                <li>Stay in contact with the users, attend meetings to <span class="highlighted-text">discuss
+                    implementation strategies</span>.</li>
+                <li>Develop <span class="highlighted-text">new components in React</span> and others were improved
+                  and optimized.</li>
+                <li>Update its <span class="highlighted-text">documentation</span>, so all new code followed the
+                  best accessibility practices.</li>
               </ul>
             </div>
           </div>
@@ -95,54 +162,54 @@
     </section>
 
     <section class="skills container">
-        <h2>03. <span class="highlighted-text">Skills</span></h2>
+      <h2>03. <span class="highlighted-text">Skills</span></h2>
 
-        <div class="skill__columns">
-          <div>
-            <h3>Front-end</h3>
+      <div class="skill__columns">
+        <div>
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 (Sass/SCSS)</li>
+            <li>Bootstrap</li>
+            <li>Javascript (ES6+)</li>
+            <li>ReactJs</li>
             <ul>
-              <li>HTML5</li>
-              <li>CSS3 (Sass/SCSS)</li>
-              <li>Bootstrap</li>
-              <li>Javascript (ES6+)</li>
-              <li>ReactJs</li>
-              <ul>
-                <li>Jest</li>
-                <li>Redux</li>
-              </ul>
+              <li>Jest</li>
+              <li>Redux</li>
             </ul>
-          </div>
-          <div>
-            <h3>Back-end / Database</h3>
-            <ul>
-              <li>Node.js</li>
-              <ul>
-                <li>Express</li>
-              </ul>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Tools</h3>
-            <ul>
-              <li>Git / Mercurial</li>
-              <li>Github</li>
-              <li>VS Code / Sublime</li>
-              <li>SCRUM (Jira)</li>
-              <li>ESLint</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Others</h3>
-            <ul>
-              <li>React Native</li>
-              <li>Wordpress</li>
-              <li>Firebase</li>
-              <li>Gatsby</li>
-              <li>User Experience (UX)</li>
-            </ul>
-          </div>
+          </ul>
         </div>
+        <div>
+          <h3>Back-end / Database</h3>
+          <ul>
+            <li>Node.js</li>
+            <ul>
+              <li>Express</li>
+            </ul>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>Git / Mercurial</li>
+            <li>Github</li>
+            <li>VS Code / Sublime</li>
+            <li>SCRUM (Jira)</li>
+            <li>ESLint</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Others</h3>
+          <ul>
+            <li>React Native</li>
+            <li>Wordpress</li>
+            <li>Firebase</li>
+            <li>Gatsby</li>
+            <li>User Experience (UX)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="learning container">
@@ -186,8 +253,9 @@
           </div>
           <div class="projects__card-desc projects__card-desc_left">
             <h3>Indecision App</h3>
-            <p>Not sure what to do next? Add your options into Indecision App and let the computer choose it for you! Built on a bare React project, setup with Webpack and Sass loader.</p>
-            <div class="projects__card-tech">ReactJs  |  Sass  |  Webpack</div>
+            <p>Not sure what to do next? Add your options into Indecision App and let the computer choose it for you!
+              Built on a bare React project, setup with Webpack and Sass loader.</p>
+            <div class="projects__card-tech">ReactJs | Sass | Webpack</div>
           </div>
         </div>
 
@@ -201,7 +269,7 @@
             <p>It is a template to a React Native app,
               which consists of a Login, Signup, Home and Input Data screens. Integration with Firebase is
               also available and ready-to-use.</p>
-            <div class="projects__card-tech">React Native  |  Firebase  |  Android Studio</div>
+            <div class="projects__card-tech">React Native | Firebase | Android Studio</div>
           </div>
         </div>
 
@@ -211,10 +279,12 @@
 
   <footer class="footer">
     <p>Made with love by Mellina Yonashiro 2020 @ <a href="https://github.com/yogmel/yogmel.github.io" target="_blank">
-      Github
-    </a></p>
+        Github
+      </a></p>
   </footer>
 
+  <script src="assets/scripts/script.js"></script>
 
 </body>
+
 </html>

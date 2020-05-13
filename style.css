@@ -260,7 +260,40 @@ section {
 
 
 /* WORK EXPERIENCE */
+.experience__timeline {
+  position: relative;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.experience__timeline button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 1rem 3rem;
+}
+
+.experience__timeline button.active {
+  font-weight: bold;
+}
+
+.experience__timeline-pointer {
+  width: 4rem;
+  height: 5px;
+  background: #78697c;
+  position: absolute;
+  bottom: 0;
+  left: 42rem;
+  transform: translateX(-50%);
+  transition: .5s all ease-in-out;
+}
+
 .experience__desc {
+  display: none;
+}
+
+.experience__desc.active {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,7 +318,24 @@ section {
   padding: 3rem 0 0 2rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 550px) {
+  .experience__timeline {
+    position: relative;
+    display: flex;
+    margin: 4rem auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50rem;
+  }
+
+  .experience__divider {
+    width: 4rem;
+    height: 1px;
+    background-color: black;
+    margin: 0 1rem;
+    vertical-align: middle;
+  }
+
   .experience h2 {
     text-align: center;
   }
@@ -314,7 +364,7 @@ section {
 }
 
 @media only screen and (min-width: 1024px) {
-  .experience__desc {
+  .experience__desc.active {
     align-items: flex-start;
     flex-direction: row;
   }
@@ -384,6 +434,7 @@ section {
 }
 
 .img-box img {
+  width: 100%;
   max-width: 35rem;
   margin: 0 auto;
   display: block;

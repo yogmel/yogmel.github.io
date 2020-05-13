@@ -435,6 +435,10 @@ section {
   margin: 0 auto;
 }
 
+.projects__card {
+  margin: 7rem 0;
+}
+
 .projects__card img {
   max-width: 40rem;
   border-radius: 5px;
@@ -446,6 +450,11 @@ section {
 
 .projects__card-desc>p {
   margin: 1.5rem 0;
+}
+
+.projects__card-tech {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -490,12 +499,6 @@ section {
   .projects__card-desc h3 {
     position: absolute;
     top: -1rem;
-  }
-
-  .projects__card-tech {
-    bottom: 0rem;
-    margin-top: 2rem;
-    font-size: 2rem;
   }
 }
 

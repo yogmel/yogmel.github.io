@@ -1,24 +1,15 @@
-const buttons = document.querySelectorAll(".experience__timeline > button");
-const activeBtn = document.querySelector(
-  ".experience__timeline > button.active"
-);
+const buttons = document.querySelectorAll(".experience__timeline-btn");
+const activeBtn = document.querySelector(".experience__timeline-btn.active");
 const experienceDescriptions = document.querySelectorAll(".experience__desc");
 const experiencePointer = document.getElementById("experiencePointer");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    resetStyles();
-    changeHighlightBtn(button);
-  });
-});
-
 const resetStyles = () => {
-  experienceDescriptions.forEach(expDesc => {
-    expDesc.classList.remove("active");
-  });
-  buttons.forEach(btn => {
-    btn.classList.remove("active");
-  });
+  const activeBtn = document.querySelector(".experience__timeline-btn.active");
+  const experienceDescription = document.querySelector(
+    ".experience__desc.active"
+  );
+  activeBtn.classList.remove("active");
+  experienceDescription.classList.remove("active");
 };
 
 const changeHighlightBtn = button => {
@@ -31,22 +22,28 @@ const changeHighlightBtn = button => {
   changePointerPosition(button);
 };
 
-const changePointerPosition = elm => {
-  if (window.innerWidth > 550) {
+const changePointerPosition = button => {
+  if (window.innerWidth > 768) {
     experiencePointer.style.top = "4rem";
-    experiencePointer.style.left = elm.offsetLeft + elm.offsetWidth / 2;
+    experiencePointer.style.left = button.offsetLeft + button.offsetWidth / 2;
   } else {
     experiencePointer.style.left = "50%";
-    experiencePointer.style.top = elm.offsetTop + elm.offsetHeight;
+    experiencePointer.style.top = button.offsetTop + button.offsetHeight;
   }
 };
 
-window.onresize = function () {
-  changePointerPosition(
-    document.querySelector(".experience__timeline > button.active")
-  );
-};
+// Event listeners
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    resetStyles();
+    changeHighlightBtn(button);
+  });
+});
 
 window.onload = () => {
+  changePointerPosition(activeBtn);
+};
+window.onresize = () => {
+  const activeBtn = document.querySelector(".experience__timeline-btn.active");
   changePointerPosition(activeBtn);
 };

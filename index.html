@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <title>Mellina Yonashiro - Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,500,600,600i,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/696c0fcff5.js" crossorigin="anonymous"></script>
 </head>
@@ -29,27 +26,27 @@
         <h2>01. <span class="highlighted-text">Who am I?</span></h2>
         <div class="about__desc">
           <div class="about__img img-box">
-            <img src="./img/profile-pic.jpeg" class="img-responsive" alt="">
+            <img src="./img/profile-pic.jpeg" class="img-responsive" alt="A photo of me, smiling, in front of a wooden-colored background">
             <div class="img-box__border"></div>
           </div>
           <div class="about__text">
-            <p>Nice to meet you! I'm a software engineer, designer and educator, passionate about social, cultural and
-              collaborative experiences. I'm currently looking for a remote opportunity as a software engineer position.
+            <p><span class="highlighted-text">Nice to meet you!</span> I'm a software engineer, designer, and educator, passionate about social, cultural, and collaborative experiences. I'm specialized in front end technologies, migrating on full-stack. I'm also interested in Open Source, machine learning, and internet of things.
+            <p>I'm currently looking for a remote opportunity as a software engineer position.</p>
             </p>
             <div class="about__links">
-              <a href="mailto:yonashiro.mellina@gmail.com" target="_blank">
+              <a href="mailto:yonashiro.mellina@gmail.com" title="Send me an email" target="_blank">
                 <i class="far fa-envelope fa-3x"></i>
               </a>
-              <a href="https://github.com/yogmel" target="_blank">
+              <a href="https://github.com/yogmel" title="Check my Github account" target="_blank">
                 <i class="fab fa-github fa-3x"></i>
               </a>
-              <a href="https://www.linkedin.com/in/yogmel/" target="_blank">
+              <a href="https://www.linkedin.com/in/yogmel/" title="Check my LinkedIn profile" target="_blank">
                 <i class="fab fa-linkedin fa-3x"></i>
               </a>
-              <a href="https://dev.to/yogmel" target="_blank">
+              <a href="https://dev.to/yogmel" title="Go to my dev.to page" target="_blank">
                 <i class="fab fa-dev fa-3x"></i>
               </a>
-              <a href="https://medium.com/@yogmel" target="_blank">
+              <a href="https://medium.com/@yogmel" title="Read my articles at Medium" target="_blank">
                 <i class="fab fa-medium fa-3x"></i>
               </a>
             </div>
@@ -76,23 +73,23 @@
         <h2>02. <span class="highlighted-text">Work Experience</span></h2>
 
         <div class="experience__timeline">
-          <button data-controls="experienceOne">YouSea</button>
+          <button data-controls="experienceOne" aria-label="Click to see my experience with YouSea">YouSea</button>
           <div class="experience__divider"></div>
-          <button data-controls="experienceTwo">Reprograma</button>
+          <button data-controls="experienceTwo" aria-label="Click to see my experience with Reprograma">Reprograma</button>
           <div class="experience__divider"></div>
-          <button data-controls="experienceThree" class="active">Mozilla</button>
+          <button data-controls="experienceThree" class="active" aria-label="Click to see my experience with Mozilla">Mozilla</button>
           <div class="experience__timeline-pointer" id="experiencePointer"></div>
         </div>
 
         <div class="experience__desc active" id="experienceThree">
-          <img src="./img/mozilla-logo.png" alt="">
+          <img src="./img/mozilla-logo.png" alt="Mozilla logo">
           <div class="experience__text">
             <div class="experience__meta">
               <h3>Mozilla | Software Engineer Internship (Outreachy)</h3>
               <p>Remote | Dec 2019 – Mar 2020</p>
             </div>
             <div class="experience__details">
-              <p>Some of Mozilla's employers, who have some kind of disability, were struggling to use Treeherder
+              <p>Some of Mozilla's employers who have some kind of disability were struggling to use Treeherder
                 continuous integration apps. My role in this scenario was to <span class="highlighted-text">improve
                   accessibility</span> - make sure bugs were fixed and user experience was enhanced.</p>
               <ul>
@@ -109,25 +106,18 @@
 
 
         <div class="experience__desc" id="experienceTwo">
-          <img src="./img/reprograma-logo.png" alt="">
+          <img src="./img/reprograma-logo.png" alt="Reprograma logo">
           <div class="experience__text">
             <div class="experience__meta">
               <h3>Reprograma | Front-end Development Teacher</h3>
               <p>São Paulo - Brazil | Feb 2018 – present</p>
             </div>
             <div class="experience__details">
-              <p>Reprograma is an NGO whose mission is to inspire, empower women, and teach them the latest
-                skills needed to become excellent frontend developers. This comes with some challenges, such
-                as managing a large group of diverse women (of different races, sexualities, social
-                backgrounds) and staying updated on the latest technologies in the IT industry. My role is to
-                teach basic and advanced React and Javascript classes. I also supervise some projects during
-                the program.</p>
+              <p>Reprograma is an NGO whose mission is to empower women, providing an intensive front end course. As an educator, my focus is to <span class="highlighted-text">teach and tutor, sharing front end technologies content (HTML, CSS, Javascript and React)</span>, as well as manage a diverse group of students.</p>
               <ul>
-                <li>SKeep me updated on the latest technologies and structure classes so students have the
-                  best learning experience.</li>
-                <li>Manage and supervise projects developed by students.</li>
-                <li>Provide support to students in and out of classes.</li>
-                <li>Attend administrative meetings with tech leaders and teachers to discuss class content.</li>
+                <li><span class="highlighted-text">Keep myself updated</span> on the latest technologies</li>
+                <li><span class="highlighted-text">Manage and supervise</span> projects developed by students.</li>
+                <li><span class="highlighted-text">Collaborate</span> with team members and discuss class content.</li>
               </ul>
             </div>
           </div>
@@ -136,23 +126,18 @@
 
 
         <div class="experience__desc" id="experienceOne">
-          <img src="./img/yousea-logo.png" alt="">
+          <img src="./img/yousea-logo.png" alt="YouSea logo">
           <div class="experience__text">
             <div class="experience__meta">
               <h3>YouSea | Web and Software Developer</h3>
-              <p>Remote | Dec 2019 – Mar 2020</p>
+              <p>Mar 2016 – present</p>
             </div>
             <div class="experience__details">
-              <p>Some of Mozilla's employers, who have some kind of disability, were struggling to use Treeherder
-                continuous integration apps. My role in this scenario was to <span class="highlighted-text">improve
-                  accessibility</span> - make sure bugs were fixed and user experience was enhanced.</p>
+              <p>YouSea is the company I founded to house independent projects with clients. My goal is to make sure all processes are clear - timeline, challenges, as well as provide high-quality deliverables. That means I am responsible for <span class="highlighted-text">prototyping, developing and deploying websites and apps</span>.</p>
               <ul>
-                <li>Stay in contact with the users, attend meetings to <span class="highlighted-text">discuss
-                    implementation strategies</span>.</li>
-                <li>Develop <span class="highlighted-text">new components in React</span> and others were improved
-                  and optimized.</li>
-                <li>Update its <span class="highlighted-text">documentation</span>, so all new code followed the
-                  best accessibility practices.</li>
+                <li><span class="highlighted-text">Design projects and solutions</span> according to each client's need.</li>
+                <li><span class="highlighted-text">Develop and implement</span> web apps, websites, and blogs in cloud servers.</li>
+                <li><span class="highlighted-text">Coordinate multiple projects</span> and deadlines simultaneously.</li>
               </ul>
             </div>
           </div>
@@ -236,8 +221,8 @@
           <li>React Native The Practical Guide - <span class="t-lighter">Udemy</span></li>
           <li>Advanced CSS and Sass - <span class="t-lighter">Udemy</span></li>
           <li>React Developer Course - <span class="t-lighter">Udemy</span></li>
-          <li>Sprint Programaria - <span class="t-lighter">Artificial Intelligence</span></li>
-          <li>Curso Pocket Itaú - <span class="t-lighter">Machine Learning</span></li>
+          <li>Sprint Artificial Intelligence - <span class="t-lighter">Programaria + Intel</span></li>
+          <li>Pocket Course Machine Learning - <span class="t-lighter">Itaú</span></li>
           <li>Introduction to IoT - <span class="t-lighter">Cisco Networking Academy</span></li>
         </ul>
       </div>
@@ -248,7 +233,7 @@
       <div class="projects__box">
         <div class="projects__card">
           <div class="img-box">
-            <img src="./img/indecision-app.png" alt="">
+            <img src="./img/indecision-app.png" alt="Screenshot of Indecision App. A big purple button appears at the top, reading 'What should I do?'. Down below, you can see the options 'Learn Python' and 'Learn Typescript'.">
             <div class="img-box__overlay"></div>
           </div>
           <div class="projects__card-desc projects__card-desc_left">
@@ -261,7 +246,7 @@
 
         <div class="projects__card projects__card_right">
           <div class="img-box">
-            <img src="./img/rn-boilerplate.png" alt="">
+            <img src="./img/rn-boilerplate.png" alt="Two screenshots of the app. The first is the Sign up screen, with several inputs. The second is the Input Data screen, where the user can add images and videos.">
             <div class="img-box__overlay"></div>
           </div>
           <div class="projects__card-desc">

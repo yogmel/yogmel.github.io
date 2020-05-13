@@ -22,6 +22,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #8900f2;
 }
 
 ul {
@@ -207,6 +208,11 @@ section {
 .about__links a {
   color: #78697c;
   margin-right: 2rem;
+  transition: .3s all ease-in;
+}
+
+.about__links a:hover {
+  color: #8900f2;
 }
 
 .about__skills {

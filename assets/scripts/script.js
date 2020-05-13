@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll(".experience__timeline > button");
-const activeBtn = document.querySelectorAll(".experience__timeline > button.active");
+const activeBtn = document.querySelector(".experience__timeline > button.active");
 const experienceDescriptions = document.querySelectorAll('.experience__desc');
 const experiencePointer = document.getElementById('experiencePointer');
 
@@ -39,10 +39,8 @@ const changePointerPosition = elm => {
   }
 }
 
-(function() {
-  changePointerPosition(activeBtn);
-})()
-
 window.onresize = function(){
   changePointerPosition(document.querySelector(".experience__timeline > button.active"))
 };
+
+window.onload = () => { changePointerPosition(activeBtn) }

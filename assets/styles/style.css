@@ -22,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #8900f2;
+  color: #333;
 }
 
 ul {
@@ -39,7 +39,7 @@ li {
 p,
 h1,
 h2,
-h3 {
+h3, h4 {
   margin: 0;
 }
 
@@ -60,6 +60,10 @@ section h2 {
 
 h3 {
   font-size: 2.3rem;
+}
+
+h4 {
+  font-size: 2rem;
 }
 
 .highlighted-text {
@@ -503,7 +507,25 @@ section {
 }
 
 /* FOOTER */
-.footer {
+.footer__disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5b4e5f;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer__disclaimer > div {
+  margin-left: 2rem;
+}
+
+.footer a {
+  background: white;
+  padding: 1px 2px;
+}
+
+.footer__cc {
   width: 100%;
   background: #8e7c93;
   text-align: center;

@@ -34,6 +34,10 @@ li {
   margin-bottom: 0.5rem;
 }
 
+li > i {
+  color: #6d6d6d;
+}
+
 button {
   cursor: pointer;
   background: transparent;
@@ -87,7 +91,11 @@ h4 {
 }
 
 section {
-  padding: 7rem 2rem;
+  padding: 5rem 2rem;
+}
+
+section:last-child {
+  padding-bottom: 0;
 }
 
 section h2 {
@@ -361,6 +369,13 @@ section h2 {
   margin-left: 3rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .skill__columns > div {
+    max-width: 330px;
+    width: 100%;
+  }
+}
+
 /* EDUCATION & COURSES */
 .learning > div {
   margin-bottom: 3rem;
@@ -370,7 +385,7 @@ section h2 {
   font-weight: lighter;
 }
 
-.education__meta:last-child {
+.education__meta {
   margin-top: 2.5rem;
 }
 
@@ -474,7 +489,7 @@ section h2 {
 .footer__cc {
   background: #8e7c93;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 @media only screen and (min-width: 768px) {

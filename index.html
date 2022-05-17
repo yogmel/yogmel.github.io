@@ -173,11 +173,19 @@
           </button>
           <div class="divider"></div>
           <button
-            class="experience__timeline-btn active"
+            class="experience__timeline-btn"
             data-controls="experienceFour"
             aria-label="Click to see my experience with Daitan"
           >
             Daitan
+          </button>
+          <div class="divider"></div>
+          <button
+            class="experience__timeline-btn active"
+            data-controls="experienceFive"
+            aria-label="Click to see my experience with JustWatch"
+          >
+            JustWatch
           </button>
           <div
             class="experience__timeline-pointer"
@@ -185,7 +193,50 @@
           ></div>
         </div>
 
-        <div class="experience__desc active" id="experienceFour">
+        <div class="experience__desc active" id="experienceFive">
+          <img src="./img/justwatch-logo.jpg" alt="JustWatch logo" />
+          <div class="experience__text">
+            <div class="experience__meta">
+              <h3>JustWatch | Frontend Engineer</h3>
+              <p>Remote and Berlin, Germany | Oct 2021 – Present</p>
+            </div>
+            <div class="experience__details">
+              <p>
+                JustWatch is a streaming guide and a marketing solution to
+                distributors, streaming platforms and home entertainment. As a
+                frontend engineer, I
+                <span class="highlighted-text"
+                  >make decisions on our internal products architecture, develop
+                  and plan new features</span
+                >. We currently have a modern platform which is built in Vue and
+                a legacy one, which is in AngularJS.
+              </p>
+              <ul>
+                <li>
+                  <span class="highlighted-text"
+                    >Discuss features, implementation and take part in planning
+                    sessions</span
+                  >
+                  with interested stakeholders (designers, product managers,
+                  users and backend engineers).
+                </li>
+                <li>
+                  Develop software with
+                  <span class="highlighted-text">Vue with Typescript</span> and
+                  AngularJS.
+                </li>
+                <li>
+                  Build a platform which enables our users to make smarter
+                  decisions and optimize their work. This involves constant
+                  talking with them and
+                  <span class="highlighted-text">proposing UX solutions</span>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience__desc" id="experienceFour">
           <img src="./img/daitan-logo.jpg" alt="Daitan logo" />
           <div class="experience__text">
             <div class="experience__meta">
@@ -364,7 +415,7 @@
                 <li>styled components</li>
               </ul>
               <li>MobX</li>
-              <li>Angular</li>
+              <li>Angular, Vue</li>
             </ul>
           </div>
           <div>
@@ -394,7 +445,7 @@
             <h3>Tools</h3>
             <ul>
               <li>Git / Mercurial <i>(version control)</i></li>
-              <li>Github</li>
+              <li>Github, GitLab</li>
               <li>VS Code / Sublime</li>
               <li>Agile methods <i>(SCRUM and Kanban)</i></li>
               <li>ESLint</li>
@@ -459,6 +510,34 @@
       <section class="projects container">
         <h2>05. <span class="highlighted-text">Projects</span></h2>
         <div class="projects__box">
+          <div class="projects__card">
+            <div class="img-box">
+              <img
+                src="./img/days-countdown.png"
+                alt="Screenshot of Indecision App. A big purple button appears at the top, reading 'What should I do?'. Down below, you can see the options 'Learn Python' and 'Learn Typescript'."
+                class="img-responsive"
+              />
+            </div>
+            <div class="projects__card-desc">
+              <h3>Days Countdown App</h3>
+              <p>
+                Sometimes you just need to know how far that special date is.
+                This web app takes a description and a date, via Airbnb Date
+                Picker, and shows you how many days it will take to reach it.
+                You can store the link for later or share with people, as its
+                parameters will be in the URL. Currently in Portuguese only.
+              </p>
+              <a
+                href="https://github.com/yogmel/react-countdown"
+                target="_blank"
+                ><i class="fas fa-external-link-alt fa-2x"></i
+              ></a>
+              <div class="projects__card-tech">
+                ReactJs | styled components | MVVM
+              </div>
+            </div>
+          </div>
+
           <div class="projects__card">
             <div class="img-box">
               <img

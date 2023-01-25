@@ -1,0 +1,54 @@
+.box {
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 7rem 0;
+}
+
+.card img {
+  max-width: 40rem;
+  border-radius: 5px;
+}
+
+.cardDescription {
+  margin: 3rem 0;
+}
+
+.cardDescription > p {
+  margin-bottom: 1.5rem;
+}
+
+.cardTech {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .projects {
+    padding-bottom: 25rem;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .card img {
+    min-width: 30rem;
+  }
+
+  .cardDescription {
+    padding: 2rem;
+    margin-left: 3rem;
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+
+  .cardDescription h3 {
+    position: absolute;
+    top: -1rem;
+  }
+}

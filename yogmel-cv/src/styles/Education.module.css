@@ -1,0 +1,29 @@
+.learning > div {
+  margin-bottom: 3rem;
+}
+
+.meta p {
+  font-weight: lighter;
+}
+
+.meta {
+  margin-top: 2.5rem;
+}
+
+.courses ul li {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .learning {
+    display: flex;
+  }
+
+  .learning > div {
+    padding: 0 2rem;
+  }
+
+  .education {
+    text-align: right;
+  }
+}

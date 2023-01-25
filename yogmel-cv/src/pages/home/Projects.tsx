@@ -1,4 +1,8 @@
 import styles from "@/styles/Projects.module.css";
+import Image from "next/image";
+import CountdownImage from "@/assets/img/days-countdown.png";
+import IndecisionAppImage from "@/assets/img/indecision-app.png";
+import RNBoilerplateImage from "@/assets/img/rn-boilerplate.png";
 
 export default function Projects() {
   return (
@@ -9,8 +13,9 @@ export default function Projects() {
       <div className={styles.box}>
         <div className={styles.card}>
           <div className="img-box">
-            <img
-              src="./img/days-countdown.png"
+            <Image
+              width={300}
+              src={CountdownImage}
               alt="Screenshot of Indecision App. A big purple button appears at the top, reading 'What should I do?'. Down below, you can see the options 'Learn Python' and 'Learn Typescript'."
               className="img-responsive"
             />
@@ -39,8 +44,9 @@ export default function Projects() {
 
         <div className={styles.card}>
           <div className="img-box">
-            <img
-              src="./img/indecision-app.png"
+            <Image
+              width={300}
+              src={IndecisionAppImage}
               alt="Screenshot of Indecision App. A big purple button appears at the top, reading 'What should I do?'. Down below, you can see the options 'Learn Python' and 'Learn Typescript'."
               className="img-responsive"
             />
@@ -65,8 +71,9 @@ export default function Projects() {
 
         <div className={styles.card}>
           <div className="img-box">
-            <img
-              src="./img/rn-boilerplate.png"
+            <Image
+              width={300}
+              src={RNBoilerplateImage}
               alt="Two screenshots of the app. The first is the Sign up screen, with several inputs. The second is the Input Data screen, where the user can add images and videos."
               className="img-responsive"
             />

@@ -1,4 +1,10 @@
 import styles from "@/styles/Experience.module.css";
+import Image from "next/image";
+import JustWatchLogo from "@/assets/img/justwatch-logo.jpg";
+import DaitanLogo from "@/assets/img/daitan-logo.jpg";
+import MozillaLogo from "@/assets/img/mozilla-logo.png";
+import ReprogramaLogo from "@/assets/img/reprograma-logo.png";
+import YouSeaLogo from "@/assets/img/yousea-logo.png";
 
 export default function Experience() {
   return (
@@ -49,7 +55,12 @@ export default function Experience() {
       </div>
 
       <div className={`${styles.description} active`} id="experienceFive">
-        <img src="./img/justwatch-logo.jpg" alt="JustWatch logo" />
+        <Image
+          src={JustWatchLogo}
+          width={200}
+          height={200}
+          alt="JustWatch logo"
+        />
         <div className={styles.text}>
           <div className={styles.meta}>
             <h3>JustWatch | Frontend Engineer</h3>
@@ -96,7 +107,7 @@ export default function Experience() {
       </div>
 
       <div className={styles.description} id="experienceFour">
-        <img src="./img/daitan-logo.jpg" alt="Daitan logo" />
+        <Image src={DaitanLogo} width={200} height={200} alt="Daitan logo" />
         <div className={styles.text}>
           <div className={styles.meta}>
             <h3>Daitan | Software Engineer</h3>
@@ -144,7 +155,7 @@ export default function Experience() {
       </div>
 
       <div className={styles.description} id="experienceThree">
-        <img src="./img/mozilla-logo.png" alt="Mozilla logo" />
+        <Image src={MozillaLogo} width={200} height={200} alt="Mozilla logo" />
         <div className={styles.text}>
           <div className={styles.meta}>
             <h3>Mozilla | Software Engineer Internship (Outreachy)</h3>
@@ -184,7 +195,12 @@ export default function Experience() {
       </div>
 
       <div className={styles.description} id="experienceTwo">
-        <img src="./img/reprograma-logo.png" alt="Reprograma logo" />
+        <Image
+          src={ReprogramaLogo}
+          width={200}
+          height={200}
+          alt="Reprograma logo"
+        />
         <div className={styles.text}>
           <div className={styles.meta}>
             <h3>Reprograma | Front-end Development Teacher</h3>
@@ -219,7 +235,7 @@ export default function Experience() {
       </div>
 
       <div className={styles.description} id="experienceOne">
-        <img src="./img/yousea-logo.png" alt="YouSea logo" />
+        <Image src={YouSeaLogo} width={200} height={200} alt="YouSea logo" />
         <div className={styles.text}>
           <div className={styles.meta}>
             <h3>YouSea | Web and Software Developer</h3>

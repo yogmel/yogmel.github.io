@@ -8,7 +8,8 @@ export default function App() {
         <meta charSet="UTF-8" />
         <title>Mellina Yonashiro - Software Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico?v1" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico?v1" type="image/x-icon" />
         <meta
           property="og:title"
           content="Mellina Yonashiro - Software Engineer"

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProfilePic from "@/assets/img/profile-pic.jpeg";
 import styles from "@/styles/About.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,

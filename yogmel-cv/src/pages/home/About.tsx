@@ -1,6 +1,49 @@
 import Image from "next/image";
 import ProfilePic from "@/assets/img/profile-pic.jpeg";
 import styles from "@/styles/About.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faHackerrank,
+  faLinkedin,
+  faDev,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
+import SocialMediaButton from "@/components/SocialMediaButton";
+
+const socialMediaData = [
+  {
+    href: "mailto:yonashiro.mellina@gmail.com",
+    title: "Send me an email",
+    icon: faEnvelope,
+  },
+  {
+    href: "https://github.com/yogmel",
+    title: "Check my Github account",
+    icon: faGithub,
+  },
+  {
+    href: "https://www.hackerrank.com/yogmel",
+    title: "Check my Hackerrank account",
+    icon: faHackerrank,
+  },
+  {
+    href: "https://www.linkedin.com/in/yogmel/",
+    title: "Check my LinkedIn profile",
+    icon: faLinkedin,
+  },
+  {
+    href: "https://dev.to/yogmel",
+    title: "Go to my dev.to page",
+    icon: faDev,
+  },
+  {
+    href: "https://medium.com/@yogmel",
+    title: "Read my articles at Medium",
+    icon: faMedium,
+  },
+];
 
 export default function About() {
   return (
@@ -31,54 +74,14 @@ export default function About() {
             I'm currently looking for an opportunity as a software engineer.
           </p>
           <div className={styles.links}>
-            <a
-              href="mailto:yonashiro.mellina@gmail.com"
-              title="Send me an email"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="far fa-envelope fa-3x"></i>
-            </a>
-            <a
-              href="https://github.com/yogmel"
-              title="Check my Github account"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-github fa-3x"></i>
-            </a>
-            <a
-              href="https://www.hackerrank.com/yogmel"
-              title="Check my Hackerrank account"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-hackerrank fa-3x"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yogmel/"
-              title="Check my LinkedIn profile"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-linkedin fa-3x"></i>
-            </a>
-            <a
-              href="https://dev.to/yogmel"
-              title="Go to my dev.to page"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-dev fa-3x"></i>
-            </a>
-            <a
-              href="https://medium.com/@yogmel"
-              title="Read my articles at Medium"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-medium fa-3x"></i>
-            </a>
+            {socialMediaData.map(data => (
+              <SocialMediaButton
+                key={data.title}
+                href={data.href}
+                title={data.title}
+                icon={data.icon}
+              />
+            ))}
           </div>
           <div className={styles.skills}>
             <h3>Highlights</h3>

@@ -6,11 +6,10 @@
 
 .timeline button {
   font-size: 2rem;
-  font-weight: lighter;
   padding: 1rem 3rem;
 }
 
-.timeline button.active {
+.timelineBtnActive {
   font-weight: bold;
 }
 
@@ -27,7 +26,7 @@
   display: none;
 }
 
-.description.active {
+.descriptionActive {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +83,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .description.active {
+  .descriptionActive {
     align-items: flex-start;
     flex-direction: row;
   }

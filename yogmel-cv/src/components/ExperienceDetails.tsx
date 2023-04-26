@@ -28,7 +28,7 @@ export default function ExperienceDetails(props: ExperienceDetailsProps) {
           <ReactMarkdown>{description}</ReactMarkdown>
           <ul>
             {highlights.map((highlight, index) => (
-              <li key={index}>{highlight}</li>
+              <li key={index}><ReactMarkdown>{highlight}</ReactMarkdown></li>
             ))}
           </ul>
         </div>

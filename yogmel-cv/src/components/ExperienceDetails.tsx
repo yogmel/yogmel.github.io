@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown'
 import { Experience } from "./ExperienceToggler";
 import Image from "next/image";
 import styles from "@/styles/Experience.module.css";
@@ -24,7 +25,7 @@ export default function ExperienceDetails(props: ExperienceDetailsProps) {
           <p>{date}</p>
         </div>
         <div className={styles.details}>
-          <p>{description}</p>
+          <ReactMarkdown>{description}</ReactMarkdown>
           <ul>
             {highlights.map((highlight, index) => (
               <li key={index}>{highlight}</li>

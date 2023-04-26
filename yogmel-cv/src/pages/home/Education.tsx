@@ -72,7 +72,7 @@ export default function Education() {
         <h2>
           04.2 <span className="highlighted-text">Courses</span>
         </h2>
-        <EducationList type="education" data={coursesData} />
+        <EducationList type="course" data={coursesData} />
       </div>
     </section>
   );

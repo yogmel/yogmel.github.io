@@ -57,11 +57,11 @@ export default function ExperienceToggler(props: ExperienceTogglerProps) {
             </React.Fragment>
           );
         })}
-        <div
+        {/* <div
           className={styles.timelinePointer}
           ref={inputEl}
           style={{ top, left }}
-        ></div>
+        ></div> */}
       </div>
 
       {data.map(item => {

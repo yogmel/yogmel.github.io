@@ -1,4 +1,4 @@
-import ExperienceToggler from "@/components/ExperienceToggler";
+import ExperienceToggler from "@/shared/components/ExperienceToggler";
 import { experienceData } from '@/data';
 
 export default function Experience() {

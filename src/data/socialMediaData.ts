@@ -7,7 +7,7 @@ import {
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default [
+const socialMediaData = [
   {
     href: "mailto:yonashiro.mellina@gmail.com",
     title: "Send me an email",
@@ -39,3 +39,5 @@ export default [
     icon: faMedium,
   },
 ];
+
+export default socialMediaData;

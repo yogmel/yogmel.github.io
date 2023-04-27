@@ -1,5 +1,5 @@
 import styles from "@/styles/Projects.module.css";
-import ProjectList from "@/components/ProjectsList";
+import ProjectList from "@/shared/components/ProjectsList";
 import { projectData } from "@/data";
 
 export default function Projects() {

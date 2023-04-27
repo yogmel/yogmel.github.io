@@ -1,4 +1,4 @@
-export default [
+const coursesData = [
   {
     course: "Advanced Javascript",
     institution: "Udemy",
@@ -32,3 +32,5 @@ export default [
     institution: "Cisco Networking Academy",
   },
 ];
+
+export default coursesData;

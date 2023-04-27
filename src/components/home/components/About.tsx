@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ProfilePic from "@/assets/img/profile-pic.jpeg";
 import styles from "@/styles/About.module.css";
-import SocialMediaButton from "@/components/SocialMediaButton";
+import SocialMediaButton from "@/shared/components/SocialMediaButton";
 import { socialMediaData } from "@/data";
 
 export default function About() {

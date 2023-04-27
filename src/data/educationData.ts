@@ -1,4 +1,4 @@
-export default [
+const educationData = [
   {
     institution: "Universidade Federal de Minas Gerais (UFMG)",
     course: "Extension course - Software Engineer",
@@ -15,3 +15,6 @@ export default [
     location: "New York, NY | Jan - Dec 2013",
   },
 ];
+
+
+export default educationData;

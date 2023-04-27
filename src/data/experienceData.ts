@@ -4,7 +4,7 @@ import MozillaLogo from "@/assets/img/mozilla-logo.png";
 import ReprogramaLogo from "@/assets/img/reprograma-logo.png";
 import YouSeaLogo from "@/assets/img/yousea-logo.png";
 
-export default [
+const experienceData = [
   {
     active: false,
     companyName: "YouSea",
@@ -76,3 +76,5 @@ export default [
     ],
   },
 ];
+
+export default experienceData;

@@ -1,4 +1,4 @@
-export default [
+const skillsData = [
   {
     title: "Front-end",
     data: [
@@ -33,3 +33,5 @@ export default [
     ],
   },
 ];
+
+export default skillsData;

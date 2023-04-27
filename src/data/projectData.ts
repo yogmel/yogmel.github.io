@@ -3,7 +3,7 @@ import CountdownImage from "@/assets/img/days-countdown.png";
 import IndecisionAppImage from "@/assets/img/indecision-app.png";
 import RNBoilerplateImage from "@/assets/img/rn-boilerplate.png";
 
-export default [
+const projectData = [
   {
     image: {
       src: CountdownImage,
@@ -38,3 +38,5 @@ export default [
     keywords: "React Native | Firebase | Android Studio",
   },
 ];
+
+export default projectData;

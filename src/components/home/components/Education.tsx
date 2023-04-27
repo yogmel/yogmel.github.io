@@ -1,4 +1,4 @@
-import EducationList from "@/components/EducationList";
+import EducationList from "@/shared/components/EducationList";
 import styles from "@/styles/Education.module.css";
 import { educationData, coursesData } from "@/data";
 

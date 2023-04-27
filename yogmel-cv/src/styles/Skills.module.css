@@ -1,0 +1,21 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.columns h3 {
+  margin-bottom: 1rem;
+}
+
+.columns > div {
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .columns > div {
+    max-width: 330px;
+    width: 100%;
+  }
+}

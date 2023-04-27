@@ -1,0 +1,90 @@
+.timeline {
+  position: relative;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.timeline button {
+  font-size: 2rem;
+  padding: 1rem 3rem;
+}
+
+.timelineBtnActive {
+  font-weight: bold;
+}
+
+.timelinePointer {
+  width: 4rem;
+  height: 5px;
+  background: #78697c;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: 0.5s all ease-in-out;
+}
+
+.description {
+  display: none;
+}
+
+.descriptionActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description img {
+  width: 100%;
+  border-radius: 25rem;
+  max-width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.meta {
+  margin-bottom: 2rem;
+}
+
+.meta p {
+  font-weight: lighter;
+}
+
+.details ul {
+  padding: 3rem 0 0 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+    max-width: 50rem;
+  }
+
+  .experience h2 {
+    text-align: center;
+  }
+
+  .text {
+    max-width: 70rem;
+    padding-left: 6rem;
+  }
+
+  .details {
+    display: flex;
+  }
+
+  .details > * {
+    width: 45%;
+  }
+
+  .details ul {
+    padding: 0 0 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .descriptionActive {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}

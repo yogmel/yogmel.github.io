@@ -1,0 +1,39 @@
+.footer {
+  color: white;
+}
+
+.footer a {
+  background: white;
+  padding: 1px 2px;
+}
+
+.disclaimer {
+  background: #5b4e5f;
+  padding: 3rem;
+}
+
+.disclaimer h4 {
+  margin-bottom: 1rem;
+}
+
+.disclaimer > div {
+  margin-left: 2rem;
+}
+
+.cc {
+  background: #8e7c93;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer h4 {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,66 @@
+.img,
+.img img {
+  margin: 0 auto;
+  width: 25rem;
+  height: 25rem;
+}
+
+.text {
+  padding: 4rem 1rem;
+}
+
+.links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.links a {
+  color: #78697c;
+  margin-right: 2rem;
+  transition: 0.3s all ease-in;
+}
+
+.links a:hover,
+.links a:focus,
+.links a:active {
+  color: #8900f2;
+}
+
+.skills {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.skillList {
+  list-style: none;
+  font-size: 1.8rem;
+  padding: 0;
+}
+
+.skillList li {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .description {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .text {
+    max-width: 60rem;
+    padding: 0 4rem;
+  }
+
+  .links {
+    text-align: left;
+  }
+
+  .skills {
+    text-align: left;
+  }
+
+  .skillList li {
+    display: inline-block;
+  }
+}

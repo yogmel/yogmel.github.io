@@ -34,7 +34,7 @@ li {
   margin-bottom: 0.5rem;
 }
 
-li > i {
+li>i {
   color: #6d6d6d;
 }
 
@@ -119,6 +119,7 @@ section h2 {
 /* IMAGES */
 .img-responsive {
   width: 100%;
+  height: auto;
 }
 
 .img-box {

@@ -6,9 +6,9 @@ export default function Footer() {
       <div className={styles.disclaimer}>
         <h4>About this site</h4>
         <div>
-          <p>Built with HTML, CSS and vanilla Javascript.</p>
+          <p>Built with NextJS.</p>
           <p>
-            If you find a bug, please register an
+            If you find a bug, please register an{' '}
             <a
               href="https://github.com/yogmel/yogmel.github.io/issues"
               target="_blank"
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
       </div>
       <p className={styles.cc}>
-        Made with love by Mellina Yonashiro 2023 @
+        Made with love by Mellina Yonashiro 2023 @{' '}
         <a
           href="https://github.com/yogmel/yogmel.github.io"
           target="_blank"

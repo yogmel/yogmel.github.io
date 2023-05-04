@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfilePic from "@/assets/img/profile-pic.jpeg";
+import ProfilePic from "@/assets/img/profile-pic.jpg";
 import styles from "@/styles/About.module.css";
 import SocialMediaButton from "@/shared/components/SocialMediaButton";
 import { socialMediaData } from "@/data";
@@ -29,9 +29,6 @@ export default function About() {
             technologies, migrating on full-stack. I'm also interested in Open
             Source, machine learning, and internet of things.
           </p>
-          <p>
-            I'm currently looking for an opportunity as a software engineer.
-          </p>
           <div className={styles.links}>
             {socialMediaData.map(data => (
               <SocialMediaButton
@@ -45,9 +42,9 @@ export default function About() {
           <div className={styles.skills}>
             <h3>Highlights</h3>
             <ul className={styles.skillList}>
-              <li>Javascript (ES6+)</li>
+              <li>Javascript / Typescript</li>
               <li className="divider"></li>
-              <li>React + Typescript</li>
+              <li>React</li>
               <li className="divider"></li>
               <li>MVVM</li>
             </ul>

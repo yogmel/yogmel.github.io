@@ -66,8 +66,8 @@ export default function Skills() {
               <li>Express</li>
             </ul>
             <li>MongoDB</li>
+            <li>Firebase</li>
           </ul>
-          <li>Firebase</li>
         </div>
         <div>
           <h3>Tools</h3>
@@ -78,7 +78,7 @@ export default function Skills() {
             <li>Github, GitLab</li>
             <li>VS Code / Sublime</li>
             <li>
-              Agile methods <i>(SCRUM and Kanban)</i>
+              Agile methods
             </li>
             <li>ESLint</li>
           </ul>

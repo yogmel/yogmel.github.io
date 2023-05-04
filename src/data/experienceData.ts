@@ -12,7 +12,7 @@ const experienceData = [
     date: "Mar 2016 – present",
     logo: YouSeaLogo,
     description:
-      "YouSea is the company I founded to house independent projects with clients. My goal is to make sure all processes are clear - timeline, challenges, as well as provide high-quality deliverables. That means I am responsible for *prototyping, developing and deploying websites and apps *.",
+      "YouSea is the company I founded to house independent projects with clients. My goal is to make sure all processes are clear - timeline, challenges, as well as provide high-quality deliverables. That means I am responsible for *prototyping, developing and deploying websites and apps*.",
     highlights: [
       "*Design projects and solutions* according to each client's need.",
       "*Develop and implement* web apps, websites, and blogs in cloud servers.",
